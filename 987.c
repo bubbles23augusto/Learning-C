@@ -9,7 +9,12 @@ void numberwrite(int unit, int dezena, int centena) {
 		write(1, &charcentena, 1) ;
 		write(1, &chardezena, 1) ;
 		write(1, &unichar, 1) ;	
-		write(1, ", ", 2) ;
+		if (unit == 7 && dezena == 8 && centena == 9) {
+			write(1, "\n", 1) ;
+		}
+		else {
+			write(1, ", ", 2) ;
+		}
 }
 
 int main (void) {
