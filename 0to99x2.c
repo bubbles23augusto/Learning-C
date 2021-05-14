@@ -12,7 +12,7 @@ void writenum (int left, int lerda, int d, int u) {
 	write(1, &dchar, 1) ;
 	write(1, &uchar, 1) ;
 	
-	if (left == 9 && lerda == 9 && d == 9 && u == 9)
+	if (left == 9 && lerda == 9 && d == 9 && u == 8)
 	write(1, "\n", 1);
 	
 	else
@@ -32,8 +32,13 @@ int main (void) {
 			while (d <= 9) {
 				
 				while (u <= 9) {
-					writenum (left, lerda, d, u);
-					u++ ;
+					if (u == lerda && d == left){
+						u++;
+					}
+					else {
+						writenum (left, lerda, d, u);
+						u++ ;
+					}
 				} 
 		
 			u = 0;
