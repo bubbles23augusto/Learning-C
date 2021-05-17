@@ -46,6 +46,10 @@ void reverse_n(int n) {
 		n*= -1;
 	}
 	
+	if (n==0){
+		write(1, "0\n", 2);
+	}
+	
     while (n != 0) {
     	div = n % 10;
 		reversed = reversed * 10 + div;
@@ -59,7 +63,7 @@ void reverse_n(int n) {
 
 int main() {
 	/*this is the number to be printed*/
-    int n = -789302;
+    int n = -0;
     
 	reverse_n(n);
 	
