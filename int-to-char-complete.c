@@ -63,7 +63,7 @@ void reverse_n(int n) {
 
 int main() {
 	/*this is the number to be printed*/
-    int n = -0;
+    int n = -23;
     
 	reverse_n(n);
 	
