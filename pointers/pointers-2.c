@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void intpointer(int *********number)
+void hugepointer(int *********number)
 {
 	/*changed the value of the pointer to 42, so n in main will change too*/
 	*********number = 42;
@@ -23,7 +23,7 @@ int main (void)
 	printf("Before: %i\n", n);
 	/* p is pointing to the n adddres, so any changes in p, reflect on n */
 
-	intpointer(p9);
+	hugepointer(p9);
 
 	printf("After: %i\n", n);
 	
