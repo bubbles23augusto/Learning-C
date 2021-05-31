@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include <stdio.h>
 
 void intpointer(int* number)
@@ -11,12 +10,11 @@ int main (void)
 {
 	/* n is the variable, *p is the pointer.*/
 	int n=0;
-	int *p;
+
 	printf("Before: %i\n", n);
 	/* p is pointing to the n adddres, so any changes in p, reflect on n */
-	p=&n;
-	
-	intpointer(p);
+
+	intpointer(&n);
 
 	printf("After: %i\n", n);
 	
