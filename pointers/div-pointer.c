@@ -8,10 +8,7 @@ void division(int a, int b, int *div, int *mod)
 
 int main (void)
 {
-	int a;
-	int b;
-	int div;
-	int mod;
+	int a, b, div, mod;
 	
 	printf("Digite o valor do Dividendo: ");
 	scanf("%i", &a);
